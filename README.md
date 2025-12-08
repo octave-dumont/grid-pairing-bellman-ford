@@ -6,7 +6,7 @@ Python implementation of an optimal pairing solver on 2D grids using:
 - An **interactive Pygame UI** to play with the grid and visualize solutions
 
 Originally developed as part of an ENSAE Paris L3 programming project about _“optimisation d’appariements sur grille”_ (_grid matching optimization_).
-
+For the **precise problem statement, grid definition and scoring rules**, see **[RULES.md](RULES.md)**.
 ---
 
 ## Features
@@ -14,6 +14,7 @@ Originally developed as part of an ENSAE Paris L3 programming project about _“
 - **Grid model (`Grid`)**
   - Encodes colors, values and constraints (forbidden cells, color compatibility, adjacency)
   - Efficient generation of all valid pairs in **O(n·m)**
+  - The exact rules and scoring function are documented in **[RULES.md](RULES.md)**.
 
 - **Two solvers**
   - `SolverNaive`: greedy solver sorting all valid pairs by cost and picking non-conflicting ones
