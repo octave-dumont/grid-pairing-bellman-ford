@@ -6,6 +6,7 @@ Python implementation of an optimal pairing solver on 2D grids using:
 - An **interactive Pygame UI** to play with the grid and visualize solutions
 
 Originally developed as part of an ENSAE Paris L3 programming project about _“optimisation d’appariements sur grille”_ (_grid matching optimization_).
+
 For the **precise problem statement, grid definition and scoring rules**, see **[RULES.md](RULES.md)**.
 ---
 
@@ -14,7 +15,6 @@ For the **precise problem statement, grid definition and scoring rules**, see **
 - **Grid model (`Grid`)**
   - Encodes colors, values and constraints (forbidden cells, color compatibility, adjacency)
   - Efficient generation of all valid pairs in **O(n·m)**
-  - The exact rules and scoring function are documented in **[RULES.md](RULES.md)**.
 
 - **Two solvers**
   - `SolverNaive`: greedy solver sorting all valid pairs by cost and picking non-conflicting ones
@@ -111,8 +111,7 @@ The UI lets you:
 
 - click cells to create/delete valid pairs  
 - see your current score  
-- press **Space** or use the button to run the optimal Bellman–Ford solver  
-  and compare your manual solution to the optimum
+- press **Space** or use the button to run the optimal Bellman–Ford solver and compare your manual solution to the optimum
 
 To use another grid file, change the path in `gridpairing/ui_pygame.py` where `Grid.grid_from_file(...)` is called (it will still be relative to `src`, e.g. `"input/grid15.in"`).
 
