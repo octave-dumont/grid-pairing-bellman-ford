@@ -30,7 +30,7 @@ The color code is:
 - $3 =$ green ($G$)
 - $4 =$ black ($B$) ; "forbidden cells"
 
-Black cells represent prohibited positions: they cannot be used in any pair and their value is not counted in the final score.
+> Black cells represent prohibited positions: they cannot be used in any pair and their value is not counted in the final score.
 
 ---
 
@@ -99,8 +99,6 @@ $$\\text{score}(\\mathcal{P})
 = \\sum_{((i_1,j_1),(i_2,j_2)) \\in\\mathcal{P}} \\bigl|v(i_1,j_1) - v(i_2,j_2)\\bigr|
 \\;+\\;
 \\sum_{\\substack{(i,j)\\ \\text{unpaired} \\\\ c(i,j) \\ne 4}} v(i,j).$$
-
-**Black cells** (color $4$) are never paired and their value does **not** contribute to the score.
 
 _**Goal:** Find a valid set of pairs_ $\\mathcal{P}$ _that **minimises**_ $\\text{score}(\\mathcal{P})$.
 
