@@ -16,7 +16,7 @@ Each cell is identified by its coordinates $(i, j)$.
 Each cell $(i, j)$ has two attributes:
 
 - a **color** $c(i, j) \\in \\{0, 1, 2, 3, 4\\}$
-- an **integer value** $v(i, j) \\ge 1$ (for non‑black cells; black cells are “forbidden” and effectively ignored in the score)
+- an **integer value** $v(i, j) \\ge 1$ (for non‑black cells)
 
 ---
 
@@ -28,9 +28,9 @@ The color code is:
 - $1 =$ red ($R$)
 - $2 =$ blue ($B$)
 - $3 =$ green ($G$)
-- $4 =$ black ($B$) ; forbidden cells
+- $4 =$ black ($B$) ; "forbidden cells"
 
-Black cells represent prohibited positions: they cannot be used in any pair and their value is not counted in the objective.
+Black cells represent prohibited positions: they cannot be used in any pair and their value is not counted in the final score.
 
 ---
 
